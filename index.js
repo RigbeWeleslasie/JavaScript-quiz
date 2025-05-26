@@ -41,16 +41,13 @@ order.processPayment().then(() => {
 });
 
 
-// 2Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
+// 2.Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
 class TeamMember {
     constructor(name, role, tasks) {
         this.name = name;
         this.role = role;
         this.tasks = tasks; 
     }
-
-  
-
     checkProgress() {
         return new Promise((resolve, reject) => {
             const allCompleted = this.tasks.every(task => task.completed);
@@ -70,15 +67,13 @@ class TeamMember {
         }
         return false;
     }
-const member = new TeamMember("Hagoes", "Student", [
+const member = new TeamMember("Hagoes", "Student",[
     { title: "Exam", completed: true },
     { title: "Teaching", completed: true }
 ]);
 
-console.log("Initial tasks:", member.tasks);
+console.log( member.tasks);
 member.completeTask("Exam");
-console.log("After completing task:", member.tasks);
-
 member.checkProgress()
     .then(message => console.log(message))
     .catch(error => console.log(error));

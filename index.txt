@@ -17,7 +17,16 @@ Question Number2:
 Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
 
 Input
+#name:String
+#Role:String
+#tasks:Boolean that express the if the task is completed or not
+process
+#Create a promise function with the method called checkProgress that checks if every the task meets the condition or not.
+#Create another function that checks if the title is task meets a function 
+#Create an object called member that has name , role and array of tasks
 
+Output 
+#String
 
 
 
