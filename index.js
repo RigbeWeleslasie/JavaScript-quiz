@@ -2,10 +2,9 @@
 // Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
 
 class CustomerOrder {
-    constructor(orderId, items, status = "pending") {
+    constructor(orderId, items) {
         this.orderId = orderId;
-        this.items = items; 
-        this.status = status;
+        this.items = items;
     }
 
     async processPayment() {
