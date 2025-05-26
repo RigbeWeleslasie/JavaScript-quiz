@@ -1,0 +1,23 @@
+Question number1:
+Create a CustomerOrder class with properties: orderId (string), items (array of objects with name, quantity, price), and status (string). Add a method calculateTotal() that returns the total order amount. Write an async method processPayment() that simulates payment with a Promise that resolves after 2 seconds. After calling the method, change the status to "paid" and print a success message.
+Input
+orderID:string
+items:array of objects with attributes of name which is string , quantitiy which is number and price also number
+status:String and it is pending by default but can be provided
+process
+Create a class called Custemer id with properties of orderid, items and quantity 
+create a promise called paymentPromise method inside the class that waits for 2 seconds then resolves the message "Payment processed successfully" 
+create a prototype outside the class called calculateTotal that has an array of items and it loops through the items array and accomulate the total sum of price
+create an object called order from the class CustomerOrder  that is an array of objects that stores the name of the product, quantitity and price as a key and their values
+output
+Total price which is:Number
+
+
+Question Number2:
+Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
+
+Input
+
+
+
+
